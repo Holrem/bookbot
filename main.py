@@ -6,14 +6,12 @@ def main():
     char_count = get_word_amount(text)
     print(char_count)
 
-
 def get_num_words(text):
     words = text.split()
     return len(words)
 
-
-def get_book_text(path):
-    with open(path) as f:
+def get_book_text(book_path):
+    with open(book_path) as f:
         return f.read()
 
 def get_word_amount(text):
